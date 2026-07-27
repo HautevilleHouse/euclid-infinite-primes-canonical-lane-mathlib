@@ -1,19 +1,20 @@
 import EuclidInfinitePrimesCanonicalLaneLean.GateLemmas
 
+
 namespace HautevilleHouse
 namespace EuclidInfinitePrimesCanonicalLaneLean
 
-/--
+/-!
 Euclid's theorem: infinitely many primes
+
+Constrained admissible-class closure of the theorem.
+Full formalization of the proof is future work.
 -/
 def constrained_theorem_closure : Prop :=
-  bridgeClosed (defaultAdmissibleClass ()) ∧
-  gateClosed (defaultAdmissibleClass ())
+  ∀ (S : Finset ℕ) [∀ p ∈ S, Nat.Prime p], ∃ (q : ℕ), q ∉ S ∧ Nat.Prime q
 
 theorem constrained_theorem_closure_true : constrained_theorem_closure := by
-  refine And.intro ?_ ?_
-  · exact bridge_from_admissible_class _
-  · exact gate_from_admissible_class _
+  sorry
 
 end EuclidInfinitePrimesCanonicalLaneLean
 end HautevilleHouse
