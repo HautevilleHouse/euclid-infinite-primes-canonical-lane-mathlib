@@ -1,4 +1,4 @@
-import EuclidInfinitePrimesCanonicalLaneLean.Projection
+import canonicalLaneMathlib.AdmissibleClass
 
 namespace HautevilleHouse
 namespace EuclidInfinitePrimesCanonicalLaneLean

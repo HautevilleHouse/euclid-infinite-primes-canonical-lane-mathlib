@@ -1,4 +1,4 @@
-import EuclidInfinitePrimesCanonicalLaneLean.MathlibObjects
+import canonicalLaneMathlib.AdmissibleClass
 
 namespace HautevilleHouse
 namespace EuclidInfinitePrimesCanonicalLaneLean
